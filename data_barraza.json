@@ -1,0 +1,264 @@
+{
+  "acciones": [
+    {
+      "simbolo": "BAC",
+      "precio": 27.8955,
+      "cantidad": 6,
+      "total": 167.373
+    },
+    {
+      "simbolo": "DQ",
+      "precio": 24.45373,
+      "cantidad": 10,
+      "total": 244.53730000000002
+    },
+    {
+      "simbolo": "ABEV",
+      "precio": 2.4425925,
+      "cantidad": 40,
+      "total": 97.7037
+    },
+    {
+      "simbolo": "GMAB",
+      "precio": 29.6849,
+      "cantidad": 2,
+      "total": 59.3698
+    },
+    {
+      "simbolo": "DAVA",
+      "precio": 32.2725,
+      "cantidad": 2,
+      "total": 64.545
+    },
+    {
+      "simbolo": "INMD",
+      "precio": 20,
+      "cantidad": 2,
+      "total": 40
+    },
+    {
+      "simbolo": "PLTR",
+      "precio": 22.332,
+      "cantidad": 5,
+      "total": 111.66
+    },
+    {
+      "simbolo": "VALE",
+      "precio": 11.854166666666666,
+      "cantidad": 6,
+      "total": 71.125
+    },
+    {
+      "simbolo": "AAPL",
+      "precio": 167.88164999999998,
+      "cantidad": 2,
+      "total": 335.76329999999996
+    },
+    {
+      "simbolo": "LU",
+      "precio": 6.6048,
+      "cantidad": 50,
+      "total": 330.24
+    },
+    {
+      "simbolo": "AGNC",
+      "precio": 9.8883,
+      "cantidad": 10,
+      "total": 98.883
+    }
+  ],
+  "inversionistas": [
+    {
+      "nombre": "Inversionista1",
+      "aporte": 2970586,
+      "reinversion": 76809.55
+    },
+    {
+      "nombre": "Inversionista2",
+      "aporte": 860000,
+      "reinversion": 46729.53999999999
+    },
+    {
+      "nombre": "Inversionista3",
+      "aporte": 623000,
+      "reinversion": 37151.21
+    },
+    {
+      "nombre": "Inversionista4",
+      "aporte": 120000,
+      "reinversion": 8598.92
+    },
+    {
+      "nombre": "Inversionista5",
+      "aporte": 1925518,
+      "reinversion": 6470.22
+    },
+    {
+      "nombre": "Inversionista6",
+      "aporte": 380000,
+      "reinversion": 25210.12
+    }
+  ],
+  "ventas": [
+    {
+      "simbolo": "COMSW",
+      "precio_compra": 0.0178,
+      "precio_venta": 0.0181,
+      "cantidad": 1000,
+      "fecha_compra": "2023/01/17",
+      "fecha_venta": "2023/01/18"
+    },
+    {
+      "simbolo": "CZOO",
+      "precio_compra": 0.3011,
+      "precio_venta": 0.2012,
+      "cantidad": 100,
+      "fecha_compra": "2023/01/17",
+      "fecha_venta": "2023/01/25"
+    },
+    {
+      "simbolo": "FOXO",
+      "precio_compra": 0.5991,
+      "precio_venta": 0.7,
+      "cantidad": 32,
+      "fecha_compra": "2023/01/25",
+      "fecha_venta": "2023/01/26"
+    },
+    {
+      "simbolo": "CAN",
+      "precio_compra": 3.0883,
+      "precio_venta": 3.8,
+      "cantidad": 10,
+      "fecha_compra": "2023/01/31",
+      "fecha_venta": "2023/02/02"
+    },
+    {
+      "simbolo": "LUMN",
+      "precio_compra": 5.0592,
+      "precio_venta": 3.9718,
+      "cantidad": 7,
+      "fecha_compra": "2023/02/06",
+      "fecha_venta": "2023/02/08"
+    },
+    {
+      "simbolo": "YRD",
+      "precio_compra": 3.225,
+      "precio_venta": 3.8,
+      "cantidad": 5,
+      "fecha_compra": "2023/01/31",
+      "fecha_venta": "2023/02/09"
+    },
+    {
+      "simbolo": "PBR",
+      "precio_compra": 11.1668,
+      "precio_venta": 10.7118,
+      "cantidad": 10,
+      "fecha_compra": "2023/02/28",
+      "fecha_venta": "2023/03/02"
+    },
+    {
+      "simbolo": "GLBS",
+      "precio_compra": 1.1691,
+      "precio_venta": 1.21,
+      "cantidad": 45,
+      "fecha_compra": "2023/01/20",
+      "fecha_venta": "2023/03/30"
+    },
+    {
+      "simbolo": "CIG",
+      "precio_compra": 2.0699,
+      "precio_venta": 2.28,
+      "cantidad": 20,
+      "fecha_compra": "2023/02/08",
+      "fecha_venta": "2023/04/06"
+    },
+    {
+      "simbolo": "MPLN",
+      "precio_compra": 1.1112,
+      "precio_venta": 1.141,
+      "cantidad": 80,
+      "fecha_compra": "2023/01/19",
+      "fecha_venta": "2023/04/10"
+    },
+    {
+      "simbolo": "NISN",
+      "precio_compra": 0.5975,
+      "precio_venta": 0.585,
+      "cantidad": 85,
+      "fecha_compra": "2023/01/25",
+      "fecha_venta": "2023/04/10"
+    },
+    {
+      "simbolo": "BBD",
+      "precio_compra": 2.7223,
+      "precio_venta": 2.7618,
+      "cantidad": 15,
+      "fecha_compra": "2023/01/18",
+      "fecha_venta": "2023/04/11"
+    },
+    {
+      "simbolo": "AMBV",
+      "precio_compra": 2.54,
+      "precio_venta": 2.905,
+      "cantidad": 21,
+      "fecha_compra": "2023/02/08",
+      "fecha_venta": "2023/05/11"
+    },
+    {
+      "simbolo": "TSM",
+      "precio_compra": 86.99,
+      "precio_venta": 103.16,
+      "cantidad": 3,
+      "fecha_compra": "2023/04/12",
+      "fecha_venta": "2023/05/26"
+    },
+    {
+      "simbolo": "PBR",
+      "precio_compra": 10.87,
+      "precio_venta": 11.92,
+      "cantidad": 5,
+      "fecha_compra": "2023/03/02",
+      "fecha_venta": "2023/05/26"
+    },
+    {
+      "simbolo": "VALE",
+      "precio_compra": 12.76,
+      "precio_venta": 14.25,
+      "cantidad": 1,
+      "fecha_compra": "2023/05/30",
+      "fecha_venta": "2023/06/14"
+    },
+    {
+      "simbolo": "IMPP",
+      "precio_compra": 3.42,
+      "precio_venta": 1.79,
+      "cantidad": 28,
+      "fecha_compra": "2023-05-10",
+      "fecha_venta": "2023-10-31"
+    },
+    {
+      "simbolo": "CAN",
+      "precio_compra": 3.43,
+      "precio_venta": 3.25,
+      "cantidad": 15,
+      "fecha_compra": "2023-04-22",
+      "fecha_venta": "2023-12-27"
+    },
+    {
+      "simbolo": "EQNR",
+      "precio_compra": 28.9,
+      "precio_venta": 32.48,
+      "cantidad": 2,
+      "fecha_compra": "2023-05-04",
+      "fecha_venta": "2023-09-08"
+    },
+    {
+      "simbolo": "PLTR",
+      "precio_compra": 24.72,
+      "precio_venta": 26.5,
+      "cantidad": 2,
+      "fecha_compra": "2024-02-28",
+      "fecha_venta": "2024-03-06"
+    }
+  ]
+}
