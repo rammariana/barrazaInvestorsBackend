@@ -6,7 +6,7 @@ import multer from "multer";
 
 import errorController from "./controllers/errorController.js";
 import actionsControllers from "./controllers/actionsControllers.js";
-// import investorsController from "./controllers/inverstorsControllers.js";
+import investorsController from "./controllers/inverstorsControllers.js";
 // import salesController from "./controllers/salesControllers.js";
 
 const app = express();
@@ -22,10 +22,22 @@ app.use((req, res, next) => {
   console.log(`${req.method} ${req.path}`);
   next();
 });
-
+// ACTIONS
 app.post("/api/action", actionsControllers.postAction); // Crear nueva acción o añadir compra
-app.get("/api/action/:id", actionsControllers.getActionById); // Buscar acción por id
 app.get("/api/actions", actionsControllers.getAllActions); // Buscar todas las acciones
+app.get("/api/action/:id", actionsControllers.getActionById); // Buscar acción por id
+app.put("/api/action/:actionId", actionsControllers.editBuyById); // Buscar compra y editar valores (id compra, id accion)
+app.delete(
+  "/api/action/:actionId/buy/:buyId",
+  actionsControllers.deleteBuyById
+); // Buscar compra y eliminar
+app.delete("/api/action/:id", actionsControllers.deleteActionById); // Eliminar acción
+
+// Al hacer un POST se mira: si la acción existe, se añade y si no se crea / CREAR ACCION O CREAR COMPRA
+// Al vender una accion se edita la cantidad si no se vende todo o se elimina la compra si se vende toda la compra, o se elimina la accion completa si se vende TODO / EDITAR - ELIMINAR
+
+// INVESTORS
+app.post("/api/create-investor", investorsController);
 
 app.use(errorController);
 
