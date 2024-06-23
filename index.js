@@ -34,10 +34,13 @@ app.delete(
 app.delete("/api/action/:id", actionsControllers.deleteActionById); // Eliminar acción
 
 // Al hacer un POST se mira: si la acción existe, se añade y si no se crea / CREAR ACCION O CREAR COMPRA
-// Al vender una accion se edita la cantidad si no se vende todo o se elimina la compra si se vende toda la compra, o se elimina la accion completa si se vende TODO / EDITAR - ELIMINAR
+// Al vender una accion se edita la cantidad si no se vende todo, o se elimina la compra si se vende toda la compra, o se elimina la accion completa si se vende TODO / EDITAR - ELIMINAR
 
 // INVESTORS
-app.post("/api/create-investor", investorsController);
+app.post("/api/create-investor", investorsController.createInvestor); // Crear/agregar inversionista
+app.get("/api/investors", investorsController.getAllInvestors); // Buscar todos los inversionistas
+app.put("/api/investor/:id", investorsController.editInvestor); // Editar info de un inversionista
+app.delete("/api/investor/:id", investorsController.deleteInvestor); // Borrar un inversionista
 
 app.use(errorController);
 

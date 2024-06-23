@@ -8,8 +8,6 @@ const mongoURI = process.env.MONGO_URI;
 mongoose
   .connect(mongoURI, {
     ssl: true,
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Conectado a MongoDB");
@@ -60,6 +58,7 @@ const getAllActions = async (req, res) => {
   // Busca todas las acciones
   try {
     let actions = await Action.find({});
+    // find busca todos los documentos si se deja vacío
 
     if (actions.length === 0) {
       return res.status(404).json({ message: "No hay acciones guardadas" });
