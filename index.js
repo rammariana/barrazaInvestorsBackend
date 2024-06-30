@@ -47,8 +47,8 @@ app.delete("/api/investor/:id", investorsController.deleteInvestor); // Borrar u
 app.post("/api/create-sale", salesController.createNewSale); // Crear nueva venta
 app.get("/api/sales", salesController.getAllSales); // Crear nueva venta
 
-app.use(errorController);
-
+app.use(errorController.handleNotFound); // Manejo de rutas no encontradas
+app.use(errorController.handleServerError); // Manejo de errores internos del servidor
 app.listen(port, () => {
   console.log(`Iniciando app en http://localhost:${port}`);
 });

@@ -10,7 +10,7 @@ mongoose
     ssl: true,
   })
   .then(() => {
-    console.log("Conectado a MongoDB");
+    console.log("Conectado a MongoDB desde actions");
   })
   .catch((error) => {
     console.error("Error al conectar a MongoDB:", error);
@@ -55,6 +55,7 @@ const postAction = async (req, res) => {
 };
 
 const getAllActions = async (req, res) => {
+  console.log("getActions");
   // Busca todas las acciones
   try {
     let actions = await Action.find({});
