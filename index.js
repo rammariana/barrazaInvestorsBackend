@@ -7,7 +7,7 @@ import multer from "multer";
 import errorController from "./controllers/errorController.js";
 import actionsControllers from "./controllers/actionsControllers.js";
 import investorsController from "./controllers/inverstorsControllers.js";
-// import salesController from "./controllers/salesControllers.js";
+import salesController from "./controllers/salesControllers.js";
 
 const app = express();
 const port = 3000;
@@ -41,6 +41,11 @@ app.post("/api/create-investor", investorsController.createInvestor); // Crear/a
 app.get("/api/investors", investorsController.getAllInvestors); // Buscar todos los inversionistas
 app.put("/api/investor/:id", investorsController.editInvestor); // Editar info de un inversionista
 app.delete("/api/investor/:id", investorsController.deleteInvestor); // Borrar un inversionista
+
+// SALES
+
+app.post("/api/create-sale", salesController.createNewSale); // Crear nueva venta
+app.get("/api/sales", salesController.getAllSales); // Crear nueva venta
 
 app.use(errorController);
 
