@@ -12,7 +12,14 @@ import salesController from "./controllers/salesControllers.js";
 const app = express();
 const port = 3000;
 
-app.use(cors()); // Protección de peticiones
+app.use(
+  cors({
+    origin: "http://localhost:8080",
+    methods: ["GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"],
+    allowedHeaders: ["X-Requested-With", "content-type"],
+    credentials: true,
+  })
+); // Protección de peticiones
 app.use(helmet()); // Protege aplicaciones express
 app.use(morgan("dev")); //Registra info de solicitudes http
 app.use(express.json());
