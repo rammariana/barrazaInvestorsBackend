@@ -4,6 +4,15 @@
 ##
 POST "/api/action" // Crear nueva acción o añadir compra
 ##
+body:
+{
+"simbolo": "INTC",
+"precio": 30.00,
+"cantidad": 2,
+"total": 60.00,
+"fecha_compra": 
+}
+##
 GET "/api/actions" // Buscar todas las acciones
 ##
 GET "/api/action/:id" // Buscar acción por id
