@@ -33,12 +33,12 @@ app.use((req, res, next) => {
 app.post("/api/action", actionsControllers.postAction); // Crear nueva acción o añadir compra
 app.get("/api/actions", actionsControllers.getAllActions); // Buscar todas las acciones
 app.get("/api/action/:id", actionsControllers.getActionById); // Buscar acción por id
-app.put("/api/action/:actionId", actionsControllers.editBuyById); // Buscar compra y editar valores (id compra, id accion)
+app.put("/api/action/:actionId/:buyId", actionsControllers.editBuyById); // Buscar compra y editar (id compra, id accion) sirve para eliminar acciones de una compra
 app.delete(
   "/api/action/:actionId/buy/:buyId",
   actionsControllers.deleteBuyById
-); // Buscar compra y eliminar
-app.delete("/api/action/:id", actionsControllers.deleteActionById); // Eliminar acción
+); // Buscar compra y eliminar toda la compra
+app.delete("/api/action/:id", actionsControllers.deleteActionById); // Eliminar acción con todas sus compras
 
 // Al hacer un POST se mira: si la acción existe, se añade y si no se crea / CREAR ACCION O CREAR COMPRA
 // Al vender una accion se edita la cantidad si no se vende todo, o se elimina la compra si se vende toda la compra, o se elimina la accion completa si se vende TODO / EDITAR - ELIMINAR
