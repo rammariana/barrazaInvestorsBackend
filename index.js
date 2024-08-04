@@ -14,7 +14,7 @@ const port = 3000;
 
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: ["*"],
     methods: ["GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["X-Requested-With", "content-type"],
     credentials: true,
