@@ -92,7 +92,7 @@ const getActionById = async (req, res) => {
 const editBuyById = async (req, res) => {
   const { actionId, buyId } = req.params; // Id de acción
   const compra = req.body; // Valores a editar
-  console.log(compra, actionId, buyId);
+  console.log(compra);
 
   try {
     // Buscamos la acción

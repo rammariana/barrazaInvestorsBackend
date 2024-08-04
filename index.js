@@ -8,11 +8,11 @@ import errorController from "./controllers/errorController.js";
 import actionsControllers from "./controllers/actionsControllers.js";
 import investorsController from "./controllers/inverstorsControllers.js";
 import salesController from "./controllers/salesControllers.js";
-app.use(express.json());
-app.use(express.urlencoded({ extended: false })); // Indica: permite el análisis de datos?
 
 const app = express();
 const port = 3000;
+app.use(express.json());
+app.use(express.urlencoded({ extended: false })); // Indica: permite el análisis de datos?
 
 app.use(
   cors({
