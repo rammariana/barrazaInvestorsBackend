@@ -8,6 +8,8 @@ import errorController from "./controllers/errorController.js";
 import actionsControllers from "./controllers/actionsControllers.js";
 import investorsController from "./controllers/inverstorsControllers.js";
 import salesController from "./controllers/salesControllers.js";
+app.use(express.json());
+app.use(express.urlencoded({ extended: false })); // Indica: permite el análisis de datos?
 
 const app = express();
 const port = 3000;
@@ -22,8 +24,6 @@ app.use(
 ); // Protección de peticiones
 app.use(helmet()); // Protege aplicaciones express
 app.use(morgan("dev")); //Registra info de solicitudes http
-app.use(express.json());
-app.use(express.urlencoded({ extended: false })); // Indica: permite el análisis de datos?
 
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.path}`);
