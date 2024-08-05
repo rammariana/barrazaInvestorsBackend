@@ -128,6 +128,38 @@ const editBuyById = async (req, res) => {
   }
 };
 
+const deleteManyBuysById = async (req, res) => {
+  const { actionId } = req.params; // Id de acción
+  const { ids } = req.body; // Valores a editar
+
+  try {
+    // Buscamos la acción
+    const actionToEdit = await Action.findById({ _id: actionId });
+
+    // Si la acción No existe...
+    if (!actionToEdit) {
+      return res.status(404).json({ message: "Acción no encontrada" });
+    }
+    // Si la acción existe...
+    // Buscamos las compras
+
+    actionToEdit = actionToEdit.compra.filter(
+      (el) => !ids.includes(el._id.toString())
+    );
+
+    await actionToEdit.save();
+
+    return res.status(200).json({
+      message: "Compras eliminadas correctamente",
+      compra: compraToEdit,
+    });
+    //
+  } catch (error) {
+    console.error("Error al buscar datos", error);
+    return res.status(500).json({ message: "Error al obtener la acción" });
+  }
+};
+
 const deleteBuyById = async (req, res) => {
   const { actionId, buyId } = req.params;
 
@@ -175,6 +207,7 @@ export default {
   getAllActions,
   getActionById,
   editBuyById,
+  deleteManyBuysById,
   deleteBuyById,
   deleteActionById,
 };

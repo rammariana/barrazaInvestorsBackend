@@ -34,6 +34,8 @@ app.post("/api/action", actionsControllers.postAction); // Crear nueva acción o
 app.get("/api/actions", actionsControllers.getAllActions); // Buscar todas las acciones
 app.get("/api/action/:id", actionsControllers.getActionById); // Buscar acción por id
 app.put("/api/action/:actionId/:buyId", actionsControllers.editBuyById); // Buscar compra y editar (id compra, id accion) sirve para eliminar acciones de una compra
+app.delete("/api/actions/:actionId/", actionsControllers.deleteManyBuysById); // Buscar varias compras y editarlas
+
 app.delete(
   "/api/action/:actionId/buy/:buyId",
   actionsControllers.deleteBuyById
