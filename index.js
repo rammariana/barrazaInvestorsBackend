@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false })); // Indica: permite el análisi
 
 app.use(
   cors({
-    origin: ["*"],
+    origin: ["*", "http://localhost:8080"],
     methods: ["GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["X-Requested-With", "content-type"],
     credentials: true,
